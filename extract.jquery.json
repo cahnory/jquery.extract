@@ -2,8 +2,8 @@
   "name": "extract",
   "title": "jQuery Extract",
   "description": "Extract data in elements by selector",
-  "keywords": ["data","extract"],
-  "version": "0.1.0",
+  "keywords": ["extract","data","attribute","text","html"],
+  "version": "0.1.1",
   "author": {
     "name":   "François Germain",
     "email":  "cahnory@gmail.com",

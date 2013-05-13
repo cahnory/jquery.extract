@@ -1,6 +1,4 @@
 /**
- * easyPlug
- *
  * LICENSE
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,11 +21,15 @@
  * @author     François "cahnory" Germain <cahnory@gmail.com>
  * @license    http://www.opensource.org/licenses/mit-license.php
  */
+/*jslint browser: true, indent: 2 */
 /*global jQuery*/
 (function ($) {
   'use strict';
   $.fn.extract = function (selector) {
-    var path;
+    var path = {
+      selector: selector,
+      type: 'html'
+    };
     selector.replace(/(.+)\:(text|html|attr|data)(?:\((.*)\))?\s*$/img, function (m, selector, type, name) {
       path = {
         selector: selector,

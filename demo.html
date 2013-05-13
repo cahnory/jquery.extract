@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+<body>
+
+  <div class="item" data-creation="2013-05-13">
+    <h2 class="item-title">Demo item</h2>
+    <div class="item-description">
+      <p>
+        Demo description
+      </p>
+    </div>
+  </div>
+
+  <script src="http://serveur.local:8888/CDN/jquery-2.0.0.min.js"></script>
+  <script src="js/jquery.extract.js"></script>
+  <script>
+    $('.item').data('is-foo', 'bar');
+
+    // $.extract = $(document).extract
+    console.log('creation:    ', $.extract('.item:attr(data-creation)'));
+    console.log('is-foo:      ', $.extract('.item:data(is-foo)'));
+    console.log('title:       ', $.extract('.item-title:text'));
+    console.log('description: ', $.extract('.item-description:html'));
+  </script>
+
+</body>
+</html>

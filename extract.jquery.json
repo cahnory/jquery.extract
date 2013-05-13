@@ -1,0 +1,31 @@
+{
+  "name": "extract",
+  "title": "jQuery Extract",
+  "description": "Extract data in elements by selector",
+  "keywords": ["data","extract"],
+  "version": "0.1.0",
+  "author": {
+    "name":   "François Germain",
+    "email":  "cahnory@gmail.com",
+    "url":    "http://www.cahnory.fr"
+  },
+  "maintainers": [
+    {
+      "name":   "François Germain",
+      "email":  "cahnory@gmail.com",
+      "url":    "http://www.cahnory.fr"
+    }
+  ],
+  "licenses": [
+    {
+      "type":  "MIT",
+      "url":   "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs":     "https://github.com/cahnory/jquery.extract/issues",
+  "homepage": "https://github.com/cahnory/jquery.extract/",
+  "download": "https://github.com/cahnory/jquery.extract/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.2.3"
+  }
+}
